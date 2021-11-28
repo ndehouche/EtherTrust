@@ -1,0 +1,224 @@
+
+body {
+	background: linear-gradient(to bottom,  rgba(255, 255, 255, 0.877) 0%, rgb(236, 212, 212) 45%,  #e9b1b1 60%);
+	background-size: 100% 400%;
+	height: 80vh;
+   font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    
+}
+h4{color: rgb(48, 0, 20);}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.buttons {
+    margin: 0%;
+    text-align: center;
+}
+
+.content, .allWills {
+  overflow:auto;
+  margin: auto;
+  padding: 0 20px;
+  display: none;
+  background-color: #fffcfc;
+}
+.allWills{
+ background-color:#fffcfc; 
+}
+.collapsible.color-8 {
+  background-image: linear-gradient(to right, #8f7982, #e5989b, #b5838d, #6d6875);
+  box-shadow: 0 4px 15px 0 rgba(119, 108, 110, 0.75);
+}
+
+.collapsible   {
+width: 100%;
+font-size: 16px;
+font-weight: 400;
+color: #fff;
+cursor: pointer;
+
+height: 35px;
+text-align:center;
+border: none;
+background-size: 300% 100%;
+
+border-radius: 0px;
+moz-transition: all .4s ease-in-out;
+-o-transition: all .4s ease-in-out;
+-webkit-transition: all .4s ease-in-out;
+transition: all .4s ease-in-out;
+}
+
+.collapsible:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.collapsible:focus {
+  outline: none;
+}
+
+
+
+.btn-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+
+.nonpayable-hover, .payable-hover {
+    width: 160px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 35px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.nonpayable-hover:hover, .payable-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.nonpayable-hover:focus, .payable-hover:focus {
+    outline: none;
+}
+.payable-hover.color-8 {
+    background-image: linear-gradient(to right, #f02525, #ff4046, #f02525, #e20000);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}
+
+.nonpayable-hover.color-8 {
+    background-image: linear-gradient(to right,#ff7315, #ff8432, #ff6600, #dd5800);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}
+
+
+
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+.interact-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-8 {
+    background-image: linear-gradient(to right, #29323c, #e5989b, #b5838d, #6d6875);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}
+
+.interact-hover.color-8 {
+    background-image: linear-gradient(to right, #ff2a2a, #e5989b, #b5838d, #6d6875);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}
+
+/* unvisited link */
+a:link {
+  color: #4e4376 ;
+}
+
+/* visited link */
+a:visited {
+  color: #2b5876;
+}
+
+/* mouse over link */
+a:hover {
+  color: #29323c;
+}
+
+
+
+input::-webkit-input-placeholder {
+    font-size: 14px;
+    line-height: 3;
+}
+
+
+
+.logo {
+  text-align:center;
+	background: #e9b1b1;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "tahoma", Times, serif;
+}
+
+td, tr {
+  text-align: center;
+  font-size: 12px;
+}
+
+.table {
+margin-bottom:50px;
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>EtherTrust -  Crypto Trust Fund</title>
+  <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=.6, maximum-scale=0.9, user-scalable=no>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+  <meta charset="utf-8">
+
+  
+
+ <style type="text/css">
+  body {
+
+background-color: white;
+zoom: 125%;
+}
+    </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.6.1-rc.0/web3.min.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+  <br>
+
+
+
+
+
+<div  class="mx-auto" style="width: 100%; flot:center;">
+ 
+
+    <h1 class="logo"><img src="image.png" width="90px" class="d-inline-block align-top" alt=""><br> EtherTrust</h1>
+
+<h4  style="text-align:center; font-size:16px"> Crypto Trust Fund</h4>
+   <div id="div-interact2" class="container" style="display:none; width: 500px; ">
+<p style="text-align:center; "> <span style="color:#40e612;    font-size:12px; border:2px; border-style:solid; border-color:#40e612; padding: 0.5em;" id="user">0x3E9...9306 </span></p> 
+</div>
+
+</div>
+<br>
+<div class="container" style="width: 500px;">
+  
+   <div class="row">
+    <div class="col">
+      <h5  style="text-align:center; "> ✍️ Testator</h5>
+      <p  align="justify"> Create a trust fund for your loved ones.  Cancel it anytime. Leave a small reward for future executors.</p>
+
+    </div>
+    <div class="col">
+      <h5  style="text-align:center; "> ⚙️ Executor</h5>
+      <p align="justify"> Execute other people's wills once they reach maturity and receive a reward in Eth for just one click. 
+        </p>
+
+    </div>
+  </div>
+
+</div>
+  
+
+<div  class="mx-auto" style="width: 500px;">
+<div class="buttons">
+   
+<button id="wallet-button" class="btn-hover color-8">🦊 Connect Wallet</button>
+
+</div>
+</div>
+</div>
+
+
+
+  <div  id="div-interact" class="mx-auto" style="width: 500px; display: none">
+   
+<h5 style="font-size: 18px;  text-align:right" class="text-center">Interact with the Contract</h5>
+<div class="row">
+<div class="col">
+<p style="font-size: 14px;  text-align:right">🟥 Payable</p>
+</div>
+<div class="col">
+<p style="font-size: 14px; text-align:left">🟧 Non-payable</p>
+</div>
+</div>
+
+    <button type="button" class="collapsible color-8" >Create a will</button>
+   
+    <div class="content" style="width: 500px">
+       <br>
+              <input class="form-control" id="amount" type=number placeholder="Trust value in wei">
+              <input class="form-control" id="reward" type=number placeholder="Reward in wei">
+              <input class="form-control" id="maturity" type=number placeholder="Will maturity in seconds">
+              <input class="form-control" id="beneficiary" placeholder="Beneficiary address">
+            <div class="buttons">
+            <button id="create-button" class="payable-hover color-8">Create Will</button>
+           </div>
+       </div>
+    <button type="button" class="collapsible color-8">I am alive!</button>
+<div class="content" style="width: 500px">
+       <br>
+            <label> Give a sign of life and reset the timers of all the wills you have created:</label>
+            <div class="buttons">
+            <button id="alive-button" class="nonpayable-hover color-8">I am alive!</button>
+           </div>
+         </div>
+
+ <button type="button" class="collapsible color-8">Cancel a Will</button>
+  <div class="content" style="width: 500px">
+       <br>
+              <input class="form-control" id="id" type=number placeholder="Index of a will of yours that you want to cancel">
+            
+            <div class="buttons">
+            <button id="cancel-button" class="nonpayable-hover color-8">Cancel Will</button>
+           </div>
+       </div>
+
+
+    <button type="button" class="collapsible color-8">Change Value</button>
+    <div class="content" style="width: 500px">
+       <br>   <input class="form-control" id="idv" type=number placeholder="Index of a will of yours whose value you want to change">
+              <input class="form-control" id="decreasev" type=number placeholder="Amount of change in wei. Can be negative for decrease">
+            <div class="buttons">
+            <button id="value-button" class="payable-hover color-8">Change Value</button>
+           </div>
+       </div>
+
+    <button type="button" class="collapsible color-8">Change Reward</button>
+    <div class="content" style="width: 500px">
+       <br>   <input class="form-control" id="idr" type=number placeholder="Index of a will of yours whose reward you want to change">
+              <input class="form-control" id="decreaser" type=number placeholder="Amount of change in wei. Can be negative for decrease">
+            <div class="buttons">
+            <button id="reward-button" class="payable-hover color-8">Change Reward</button>
+           </div>
+       </div>
+
+    <button type="button" class="collapsible color-8">Change Beneficiary</button>
+   <div class="content" style="width: 500px">
+       <br>   <input class="form-control" id="idb" type=number placeholder="Index of a will of yours whose beneficiary you want to change">
+              <input class="form-control" id="newbeneficiary" placeholder="Address of new beneficiary">
+            <div class="buttons">
+            <button id="beneficiary-button" class="nonpayable-hover color-8">Change Beneficiary</button>
+           </div>
+       </div>
+
+    <button type="button" class="collapsible color-8">Change Maturity</button>
+    <div class="content" style="width: 500px">
+       <br>   <input class="form-control" id="idm" type=number placeholder="Index of a will of yours whose maturity you want to change">
+              <input class="form-control" id="newmaturity" type=number placeholder="New maturity">
+            <div class="buttons">
+            <button id="maturity-button" class="nonpayable-hover color-8">Change Maturity</button>
+           </div>
+       </div>
+
+    <button type="button" class="collapsible color-8">Execute a Will</button>
+    <div class="content" style="width: 500px">
+       <br>   
+       <input class="form-control" id="exectestator"  placeholder="Address of the testator whose mature will you want to execute">
+       <input class="form-control" id="ide" type=number placeholder="Index of the mature will you want to execute">
+              
+            <div class="buttons">
+            <button id="execute-button" class="nonpayable-hover color-8">Execute Will</button>
+           </div>
+       </div>
+
+    <button type="button" class="collapsible color-8">See your wills</button>
+    <div class="content" style="width: 500px">
+       <br>
+            <label> Click the button to list all your wills:</label>
+            <div class="buttons">
+            <button id="wills-button" class="nonpayable-hover color-8">Get your wills</button>
+             </div>
+            <div class="allWills" id="yourWills"  style="  margin-bottom: 20px; ">
+              <table id="yourwillsTable" style="width: 100%; margin-bottom: 10px" >
+              <tr >
+               <th>Beneficiary</th>
+               <th>Value</th>
+               <th>Reward</th>
+              </tr>
+               
+              </table>
+           
+            </div>
+           
+
+    </div>
+
+    
+    <button type="button" class="collapsible color-8">See all mature wills</button>
+    <div class="content" style="width: 500px">
+       <br>
+            <label> Click the button to list all mature wills:</label>
+            <div class="buttons">
+            <button id="list-button" class="nonpayable-hover color-8">Get all wills</button>
+             </div>
+             
+            <div class="allWills" id="willsDiv" style="  margin-bottom: 20px; ">
+              <table id="willsTable" style=" width: 100%; margin-bottom: 10px" >
+              <tr >
+               <th>Testator</th>
+               <th>Index</th>
+               <th>Reward</th>
+              </tr>
+              
+              </table>
+              
+            </div>
+           
+           
+
+    </div>
+
+
+   
+    
+  </div>
+ 
+
+    
+  
+
+<!-- partial -->
+  <hr>
+    <div  class="mx-auto" style="width: 500px">
+  <p class="text-center">Created by <a href="https://twitter.com/ndehouche">@ndehouche</a>.</p>
+  <div>
+</body>
+
+
+</html>
