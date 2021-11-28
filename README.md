@@ -1,4 +1,4 @@
-# EtherTrust: A Crypto Trust Fund by  
+# EtherTrust: A Crypto Trust Fund 
 
 **Author**
 Nassim Dehouche
