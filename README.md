@@ -9,7 +9,7 @@ Nassim Dehouche
 
 
 
-**Project Description**
+**Project Description:**
 A trust fund is a legal entity that holds property or assets on behalf of another person, group or organization. It is an estate planning tool that keeps your assets in a trust managed by a neutral third party, or trustee.
 
 1. Testator creates a will specifiying an amount to be held, a maturity, a beneficiary, and an optional reward for a third party to execute it in the future. A reward of zero means that they are counting on the generosity of a future third party or the dapp owner.
