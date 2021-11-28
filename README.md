@@ -64,8 +64,6 @@ EtherTrust (root)
 +-- migrations
 |   +-- 1_initial_migration.js
 |   +-- 2_deploy_contracts.js 
-
-+-- node_modules 
 | 
 +-- src
 |   +-- index.html
