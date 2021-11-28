@@ -1,6 +1,6 @@
 # EtherTrust: A Crypto Trust Fund 
 
-**Author**
+**Author:**
 Nassim Dehouche
 
 **Ethereum account for NFT certification:**
