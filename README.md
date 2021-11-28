@@ -71,10 +71,6 @@ EtherTrust (root)
 |   +-- script.js
 |   +-- favicon.ico
 |   
-|   +-- App.js
-|   +-- App.css
-|   +-- index.css
-|   +-- index.js
 +-- test
 |   +-- ether_trust.js   
 |
