@@ -9,7 +9,7 @@ Nassim Dehouche
 
 
 
-**Project Descriptionw**
+**Project Description**
 A trust fund is a legal entity that holds property or assets on behalf of another person, group or organization. It is an estate planning tool that keeps your assets in a trust managed by a neutral third party, or trustee.
 
 1. Testator creates a will specifiying an amount to be held, a maturity, a beneficiary, and an optional reward for a third party to execute it in the future. A reward of zero means that they are counting on the generosity of a future third party or the dapp owner.
@@ -100,7 +100,7 @@ To run the DApp in a local environment, the following dependencies are required:
  **Deployment and testing** 
  1. Clone the project.  
  `git clone https://github.com/ndehouche/blockchain-developer-bootcamp-final-project.git`   
- 2. Local testing (port 8545):  `ganache-cli`, and in a new console: `truffle test`
+ 2. Local testing (port 8545):  `ganache-cli`, and in a new console: `npm install`, then `truffle test`
  3. Local deployment (port 8545): `ganache-cli`, and in a new console: `truffle migrate`
  4. Ropsten deployment: Replace the content of the `.env` file with your own infura API key and mnemonic, then `truffle migrate --network rinkeby --reset` 
 
