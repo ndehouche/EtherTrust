@@ -12,6 +12,11 @@ Nassim Dehouche
 **Project Description:**
 A trust fund is a legal entity that holds property or assets on behalf of another person, group or organization. It is an estate planning tool that keeps your assets in a trust managed by a neutral third party, or trustee.
 
+**Personas** 
+1. User is a long time hodler of Ethereum. Her heirs are still little kids. She creates a will for each one of them and sets the maturity of the contracts to 10 years. She offers a small reward to whoever executes the contract to the benefit of her heirs. The 10 years timer is reset every time she interacts with the contract. She can also modify the wills or cancel them.
+2. User has surgery next week. He is not sure if he will make it or not. He sets the maturity of his contract to a week, and tells his family to use their wallet to get the funds, if God forbids. He can cancel the will if he survives.
+
+**Workflow** 
 1. Testator creates a will specifiying an amount to be held, a maturity, a beneficiary, and an optional reward for a third party to execute it in the future. A reward of zero means that they are counting on the generosity of a future third party or the dapp owner.
 2. The amount is transfered to the contract and is held there until the user modifies or cancels their will or the will reaches maturity and is executed either by the beneficiary or a third party.
 3. A lastAlive timestamp associated with each testator is updated every time the testator interacts with the contract. The contract returns an error if an address that never created a will tries to report that they are still alive.
