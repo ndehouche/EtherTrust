@@ -3,10 +3,6 @@
 **Author:**
 Nassim Dehouche
 
-**Ethereum account for NFT certification:**
-`0xb2cddF705eA6f12D7B5Da081F679305A3209Af99`
-
-
 
 
 **Project Description:**
