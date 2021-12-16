@@ -22,7 +22,7 @@ A trust fund is a legal entity that holds property or assets on behalf of anothe
 
 
 **Deployed Front-End** 
-* The front-end is deployed at [https://ethertrust.nassimdehouche2.repl.co/](ethertrust.nassimdehouche2.repl.co).
+* The front-end is deployed at [https://ethertrust.nassimdehouche2.repl.co/](https://ethertrust.nassimdehouche2.repl.co).
 * It is written in html + css + js.
   * Wallet connect button.
   * Sends request to switch to Ropsten if user is connected to the wrong network. 
